@@ -1,112 +1,112 @@
 /* hier die notwendigen CSS-Angaben einfügen */
 
-/* das komprimierte html5-reset, das ich in der vorlesung erwähnt habe 
+/* das komprimierte html5-reset, das ich in der vorlesung erwähnt habe
 
-    Behalten Sie die Ordner-Struktur innerhalb des Übungspaketes bei!
-    Alle benötigten Bilder befinden sich im Übungspaket im Ordner „p“
-    Öffnen Sie das Dokument „so_solls_aussehen.jpg“ in einem Bildbearbeitungsprogramm (Photoshop/Gimp … ), um die Farbwerte der verschiedenen Elemente (Hintergründe, Überschriften usw.) herauszufinden und um die Breiten verschiedener Elemente heraus zu messen
-    Verwenden Sie für den normalen Text die „Georgia“ und für Überschriften die „Impact“
-    Der normale Text hat eine Schriftgröße von 16px und einen Zeilenabstand von 1.5
-    Überschriften habe eine Größe von 300%
-    Der eigentliche Inhaltsbereich soll 960px breit sein und jeweils in der Mitte des Browserfensters angezeigt werden */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,dialog,figure,footer,header,hgroup,menu,nav,section,menu,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}body{line-height:1}article,aside,dialog,figure,footer,header,hgroup,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{border:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{height:1px;border:0;border-top:1px solid #ccc;display:none;margin:1em 0;padding:0}input,select{vertical-align:middle}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%}q:before{content:"\201E"}q:after{content:"\201C"}.unsichtbar,.nurprint{position:absolute;width:1px;top:-1000px;left:-1000px}.group:after{visibility:hidden;display:block;font-size:0;content:".";clear:both;height:0}* html .group{height:1%}:first-child+html .group{min-height:1px}
+
+ */
+
+body {
+    color: #817F82;
+}
 
 a:link {
-	color: #82817F;
+	color: #817F82;
 }
 
-
-body {    /* TODO: Bild einfügen und in der Mitte dargestellt*/;
+hgroup {
+	font-family: Georgia;
 }
 
-article {
-		margin-left: 240px;
-		font: “impact“;
-}
-
-
-/* Ueberschriften */
-
-h1, h3, h4, h5, h6 {
+h1 {
 	font-size: 300%;
 }
 
-h2 {
-	padding-top: 0px;
-	color: #82817F;
-}
-
-.firstMenMoon, hgroup {
-	color: #82817F;
-	font-family: „Impact“;
-}
-
 p {
-    font-family: „Georgia“;
-    font-size: 16px;
-    padding-left: 144px;
-    padding-right: 274px;
-	color: #82817F;
-	/* TODO: Zeilenabstand 1.5 */
+	font-family: Impact;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+
+/* TODO background image  */
+
+.firstMenMoon {
+	background-image:url('p/img_78.gif');
+}
+
+.firstMenMoon article {
+	width: 954px;
+	margin-right: 100px;
+	margin-left:100px;
+	margin-bottom: 50px;
+	background-color: #ffffff;
 }
 
 .betont {
-	font-size: 268%;
+	color: #494E52;
 }
 
-section {
-	width: 1234px;
-	display:block;
+.betont strong {
+	color: #CF1314;
+	background-color: #F2EDE7;
 }
 
-img {
-    margin-left: -38px;
-}
 
-figcaption {
-	text-align: right;
-}
 
-figcaption .earth {
-	padding-left: 68%;
-}
 
-cite {
-	text-align: right;
-}
 
-strong {
-	color: #AD1F2F;
-	background-color: #F2F2F2;
-}
-
-table {
-	color: #82817F;
-}
-
+/* TODO table color and border */
 
 .solarSystem {
 	background-color: #9A9A9A;
-	color: #828190;
+}
+
+.solarSystem h1 {
+	color: #4B4F52;
+}
+
+.solarSystem table {
+	color: #FFFFFF;
+	border: 1px #FFFFFF;
+}
+
+.solarSystem hgroup h2 {
+	color: #FFFFFF;
+}
+
+.solarSystem a:link {
+	color: #FFFFFF;	
 }
 
 
 
 
- /* html,,div,span,object,iframe
 
- h2, h3, h4, h5, h6 
+/* TODO border image */
 
-
-
-
-
-blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,dialog,figure,footer,header,,menu,nav,section,menu,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}body{line-height:1}article,aside,dialog,figure,footer,header,hgroup,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{border:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{height:1px;border:0;border-top:1px solid #ccc;display:none;margin:1em 0;padding:0}input,select{vertical-align:middle}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%}q:before{content:"\201E"}q:after{content:"\201C"}.unsichtbar,.nurprint{position:absolute;width:1px;top:-1000px;left:-1000px}.group:after{visibility:hidden;display:block;font-size:0;content:".";clear:both;height:0}* html .group{height:1%}:first-child+html .group{min-height:1px}
-
-body {
-    
+.keplerLaw {
+	border-image:url('p/keplerLawBorder.gif') 30 30 round;
+	background-color: #000000;
 }
 
-section {
-
+.keplerLaw h1 {
+	color: #CFCBC8;
 }
- */
+
+.keplerLaw p {
+	color: #FBFFFF;
+}
+
+.keplerLaw strong {
+	background-color: #28CFF3;
+	color: #000000;
+}
+
+.keplerLaw a:link {
+	color: #FFFFFF;
+}
+
+.keplerLaw figcaption {
+	color: #FFFFFF;
+}
