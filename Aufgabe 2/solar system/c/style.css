@@ -3,11 +3,13 @@
 /* das komprimierte html5-reset, das ich in der vorlesung erwähnt habe
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,dialog,figure,footer,header,hgroup,menu,nav,section,menu,time,mark,audio,video{border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}body{line-height:1}article,aside,dialog,figure,footer,header,hgroup,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{border:0;font-size:100%;vertical-align:baseline;background:transparent;margin:0;padding:0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted #000;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{height:1px;border:0;border-top:1px solid #ccc;display:none;margin:1em 0;padding:0}input,select{vertical-align:middle}h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%}q:before{content:"\201E"}q:after{content:"\201C"}.unsichtbar,.nurprint{position:absolute;width:1px;top:-1000px;left:-1000px}.group:after{visibility:hidden;display:block;font-size:0;content:".";clear:both;height:0}* html .group{height:1%}:first-child+html .group{min-height:1px}
+*/
 
- */
 
 body {
     color: #817F82;
+    background-image:url('../p/img_78.gif');
+
 }
 
 a:link {
@@ -15,36 +17,58 @@ a:link {
 }
 
 hgroup {
-	font-family: Georgia;
+	font-family: Impact;
+}
+
+hgroup h2 {
+	font-size: 16px;
+	padding-left: 20px;
+	margin-top: -20px;
 }
 
 h1 {
-	font-size: 300%;
+    font-size: 300%;
+    margin-bottom: 13px;
+    margin-top: 0px;
+    padding-left: 20px;
+    text-transform: uppercase;
 }
 
 p {
-	font-family: Impact;
+	font-family: Georgia;
 	font-size: 16px;
 	line-height: 1.5;
+	padding-left: 200px;
+	padding-right: 200px;
 }
 
 
-/* TODO background image  */
 
-.firstMenMoon {
-	background-image:url('p/img_78.gif');
+
+
+
+.firstMenMoon figcaption {
+	text-align: right;
 }
 
 .firstMenMoon article {
-	width: 954px;
-	margin-right: 100px;
-	margin-left:100px;
+	width: 958px;
+	height: 1650px;
+	margin-right: 200px;
+	margin-left: 200px;
 	margin-bottom: 50px;
 	background-color: #ffffff;
 }
 
+.firstMenMoon img {
+ 	margin-left: -41px;
+}
+
 .betont {
 	color: #494E52;
+	font-size: 210%;
+	text-transform: uppercase;
+
 }
 
 .betont strong {
@@ -56,19 +80,29 @@ p {
 
 
 
+
+
 /* TODO table color and border */
 
 .solarSystem {
 	background-color: #9A9A9A;
+	padding-bottom: 150px;
 }
 
 .solarSystem h1 {
 	color: #4B4F52;
+	padding-top: 20px;
+}
+
+.solarSystem article {
+	padding-left: 200px;
 }
 
 .solarSystem table {
-	color: #FFFFFF;
-	border: 1px #FFFFFF;
+    border: 1px none #FFFFFF;
+    color: #FFFFFF;
+    padding-left: 25px;
+    padding-top: 25px;
 }
 
 .solarSystem hgroup h2 {
@@ -83,11 +117,14 @@ p {
 
 
 
-/* TODO border image */
+
+
+
+/* TODO background image */
 
 .keplerLaw {
-	border-image:url('p/keplerLawBorder.gif') 30 30 round;
-	background-color: #000000;
+	background:url('../p/keplerLawBorder.gif') repeat-x #000000;
+	margin-top: -16px;
 }
 
 .keplerLaw h1 {
@@ -109,4 +146,12 @@ p {
 
 .keplerLaw figcaption {
 	color: #FFFFFF;
+}
+
+.earth {
+    float: right;
+    margin-left: 708px;
+    margin-right: 254px;
+    margin-top: -140px;
+    border: 3px white solid;
 }
