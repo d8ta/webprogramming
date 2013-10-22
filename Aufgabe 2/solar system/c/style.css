@@ -103,7 +103,43 @@ p {
     color: #FFFFFF;
     padding-left: 25px;
     padding-top: 25px;
-    border-right: 1px white solid;
+}
+
+.solarSystem tr:nth-child(odd) {
+	background-color: #8A8A8A;
+}
+
+.solarSystem tr:nth-child(6) {
+	color: #CEB9A8;
+}
+
+.solarSystem td {
+	border-right: 1px solid #FFFFFF;
+	padding-right: 10px;
+}
+
+.solarSystem td:nth-child(2) {
+	text-align: right;
+	    padding-left: 40px;
+}
+
+.solarSystem td:nth-child(3) {
+	text-align: right;
+	padding-left: 40px;
+}
+
+.solarSystem td:nth-child(1) {
+	text-align: left;
+    padding-right: 40px;
+}
+
+.solarSystem td:nth-child(4) {
+	text-align: left;
+    padding-right: 40px;
+}
+
+.solarSystem thead tr {
+	background-color: #9A9A9A;
 }
 
 .solarSystem hgroup h2 {
@@ -130,7 +166,7 @@ p {
 }
 
 .keplerLaw h1 {
-    color: #FFFFFF;
+    color: #EFFFFF;
     font-family: impact;
     font-size: 300%;
     margin-bottom: 20px;
@@ -153,28 +189,29 @@ p {
 
 .keplerLaw a:link {
 	color: #FFFFFF;
-	padding-left: 111px;
 }
 
 .keplerLaw figure {
 	padding-left: 170px;
 }
 
+
 .keplerLaw cite {
-    padding-left: 300px;
+    padding-left: 410px;
     padding-right: 360px;
 }
 
 .keplerLaw figcaption {
     color: #FFFFFF;
-    margin-left: 770px;
-    margin-top: -50px;
+    margin-left: 721px;
+    margin-top: -3px;
 }
+
 
 .earth img {
     border: 3px solid #FFFFFF;
-    margin-bottom: 20px;
-    margin-left: 700px;
+    margin-bottom: -29px;
+    margin-left: 655px;
     margin-top: -118px;
 }
 
