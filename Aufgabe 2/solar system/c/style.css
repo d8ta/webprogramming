@@ -103,6 +103,7 @@ p {
     color: #FFFFFF;
     padding-left: 25px;
     padding-top: 25px;
+    border-right: 1px white solid;
 }
 
 .solarSystem hgroup h2 {
@@ -125,14 +126,24 @@ p {
 .keplerLaw {
 	background:url('../p/keplerLawBorder.gif') repeat-x #000000;
 	margin-top: -16px;
+	height: 1250px;
 }
 
 .keplerLaw h1 {
-	color: #CFCBC8;
+    color: #FFFFFF;
+    font-family: impact;
+    font-size: 300%;
+    margin-bottom: 20px;
+    margin-top: 55px;
+    padding-bottom: 30px;
+    padding-left: 270px;
+    text-transform: uppercase;
 }
 
 .keplerLaw p {
-	color: #FBFFFF;
+    color: #FBFFFF;
+    padding-left: 410px;
+    padding-right: 340px;
 }
 
 .keplerLaw strong {
@@ -142,16 +153,28 @@ p {
 
 .keplerLaw a:link {
 	color: #FFFFFF;
+	padding-left: 111px;
+}
+
+.keplerLaw figure {
+	padding-left: 170px;
+}
+
+.keplerLaw cite {
+    padding-left: 300px;
+    padding-right: 360px;
 }
 
 .keplerLaw figcaption {
-	color: #FFFFFF;
+    color: #FFFFFF;
+    margin-left: 770px;
+    margin-top: -50px;
 }
 
-.earth {
-    float: right;
-    margin-left: 708px;
-    margin-right: 254px;
-    margin-top: -140px;
-    border: 3px white solid;
+.earth img {
+    border: 3px solid #FFFFFF;
+    margin-bottom: 20px;
+    margin-left: 700px;
+    margin-top: -118px;
 }
+
