@@ -22,16 +22,75 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 
 /* @end */
 
+/* hier die CSS-Angabe für allgemein */
+
+body {
+	font: 14px,/1.5 Georgia, serif;
+	color: rgb (81, 81, 81);
+	border-top: 5px solid rgb(40, 40, 40);
+}
+
+h1 {
+	font-family: Impact;
+	font-size: 300%;
+}
+
+p {
+	font-family: Georgia;
+	margin-left: 300px;
+}
+
+header img {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header h1 {
+    margin-left: 12px;
+    margin-top: -61px;
+}
+
+aside {
+    background-color: #FFFFFF;
+    margin-bottom: 443px;
+    margin-left: 975px;
+    margin-top: -446px;
+}
+
+figure {
+	margin-left: 300px;
+}
+
+nav {
+	position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
 /* hier die CSS-Angaben für ganz schmal */
 
 @media only screen and (min-width: 570px) {
 
 /* hier die CSS-Angaben für die mittlere Größe */
 
+	body {
+		padding: 20px;
+	}
+
 } /* 570px */
 
 @media only screen and (min-width: 768px) {
 
 /* hier die CSS-Angaben für große Bildschirme */
-	
+	body {
+		padding: 46px;
+	}
 } /* 768px */
