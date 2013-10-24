@@ -35,6 +35,11 @@ h1 {
 	font-size: 300%;
 }
 
+h2 {
+	margin-left: 300px;
+	font-family: Impact;
+}
+
 p {
 	font-family: Georgia;
 	margin-left: 300px;
@@ -64,9 +69,17 @@ figure {
 
 nav {
 	position: absolute;
+	background-color: #28CFF3
 }
 
+.group img {
+	float: left;
+	margin-bottom: 50px;
+}
 
+.figcaption {
+	float: left;
+}
 
 
 
