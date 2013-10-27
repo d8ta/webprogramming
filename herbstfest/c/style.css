@@ -26,6 +26,9 @@ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address
 
 
 /* allgemeine CSS Angaben */
+	body {
+	padding-top: 20px;
+	}
 
 
 h1 {
@@ -61,10 +64,11 @@ a:visited {
 
 
 /* hier die CSS-Angaben für ganz schmal */
-@media only screen and (min-width: 340px) {
+@media only screen and (min-width: 0px) {
 	
 	body {
-	margin-left: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 	}
 	
 	header h1 {
@@ -75,8 +79,9 @@ a:visited {
 	
 	header img {
 	padding-top: 20px
+	width: 480px;
 }
-
+ 
 	h2 {
 	margin-bottom: 20px;	
 }
@@ -147,8 +152,100 @@ a:visited {
 
 
 /* hier die CSS-Angaben für die mittlere Größe */
-@media only screen and (min-width: 570px) {
+@media only screen and (min-width: 670px) {
 	
+	body {
+	width: 730px;
+	}
+	
+	header h1 {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 310px;
+}
+	
+	header img {
+	padding-top: 20px;
+	margin-right: 30px;
+	width: 730px;
+}
+ 
+	h2 {
+	margin-bottom: 20px;
+	margin-left: 520px;	
+}
+	
+	aside {    
+    color: #515151;
+    background-color:red;
+    font-family: georgia;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 120px;
+    margin-left: 500px;
+    margin-top: -245px;
+    padding: 7px;
+    text-align: right;
+    width: 200px;
+	
+	/* TODO Opacity für hintergrund */
+}
+
+	li {
+		width: 500px;
+	}
+
+	#wrap a:link {
+    background-color: #6059C9;
+    color: #C9CDFC;
+    font-size: 120%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 10px 38px 10px 20px;
+    
+    /* TODO text align to the left */
+}
+
+
+	figure {
+    border-top: 3px double #E9E5E4;
+    padding-top: 20px;
+    width: 730px;
+}
+	
+	
+	figure img {
+    border-color: #E9E5E4;
+    border-style: solid;
+    border-width: 10px;
+    width: 480px;
+    float: left;
+}
+
+	figcaption {
+    background: none repeat scroll 0 0 #E9E5E4;
+    border-color: #E9E5E4;
+    border-width: 10px;
+    color: #7A7A7A;
+    font-size: 120%;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+    width: 500px;
+    float: left;
+}
+
+	p {
+    padding-bottom: 20px;
+    padding-left: 520px;
+    padding-right: 30px;
+    width: 240px;
+}
+
+
+
 	
 	
 	
@@ -158,66 +255,99 @@ a:visited {
         
 
 /* hier die CSS-Angaben für große Bildschirme */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
+	
+	body {
+	width: 900px;	
+	}
+	
+	header h1 {
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+    margin-top: -55px;
+    font-size: 300%;
+}
+	
+	header img {
+	padding-top: 20px;
+	margin-right: 30px;
+	width: 1000px;
+}
+ 
+	h2 {
+	margin-bottom: 20px;
+	margin-left: 520px;	
+}
+	
+	aside {    
+    color: #515151;
+    background-color:red;
+    font-family: georgia;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 120px;
+    margin-left: 500px;
+    margin-top: -245px;
+    padding: 7px;
+    text-align: right;
+    width: 217px;
+	
+	/* TODO Opacity für hintergrund */
+}
+
+	li {
+		width: 500px;
+	}
+
+	#wrap a:link {
+    background-color: #6059C9;
+    color: #C9CDFC;
+    font-size: 120%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 10px 38px 10px 20px;
+    
+    /* TODO text align to the left */
+}
 
 
+	figure {
+    border-top: 3px double #E9E5E4;
+    padding-top: 20px;
+    width: 730px;
+}
+	
+	
+	figure img {
+    border-color: #E9E5E4;
+    border-style: solid;
+    border-width: 10px;
+    width: 480px;
+    float: left;
+}
+
+	figcaption {
+    background: none repeat scroll 0 0 #E9E5E4;
+    border-color: #E9E5E4;
+    border-width: 10px;
+    color: #7A7A7A;
+    font-size: 120%;
+    margin-bottom: 20px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    text-align: center;
+    width: 500px;
+    float: left;
+}
+
+	p {
+    padding-bottom: 20px;
+    padding-left: 520px;
+    padding-right: 30px;
+    width: 230	
 
 
 }  /* @end */
 
-
-
-
-
-
-
-/* hier die CSS-Angabe für allgemein
-
-
-h2 {
-	margin-left: 300px;
-	font-family: Impact;
-}
-
-p {
-	font-family: Georgia;
-	margin-left: 300px;
-}
-
-header img {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-header h1 {
-    margin-left: 12px;
-    margin-top: -61px;
-}
-
-aside {
-    background-color: #FFFFFF;
-    margin-bottom: 443px;
-    margin-left: 975px;
-    margin-top: -446px;
-}
-
-figure {
-	margin-left: 300px;
-}
-
-nav {
-	position: absolute;
-	background-color: #28CFF3
-}
-
-.group img {
-	float: left;
-	margin-bottom: 50px;
-}
-
-.figcaption {
-	float: left;
-}
-/*
 
