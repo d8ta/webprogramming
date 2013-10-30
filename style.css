@@ -3,18 +3,19 @@ body {
 	margin-right: 20%;	
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	background-color: #EBD6B7;
+	text-transform: lowercase;
 }
 
 .main {
     background-color: #FFFFFF;
     border: 4px double #F0E7D6;
-    height: 900px;
+    border-radius: 5px 5px 5px 5px;
+    height: 1190px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 55px;
     width: 630px;
 }
-
 ul {
     margin-left: 132px;
     margin-top: 150px;
@@ -31,20 +32,25 @@ li {
     padding-left: 20px;
     padding-top: 5px;
     color: #E44D32;
+    border-radius: 5px;
 }
 
 
+
 nav {
-    margin-left: 186px;
-    margin-top: 850px;
+    margin-left: 211px;
+    margin-top: 1138px;
     position: absolute;
     text-align: center;
 }
 
-a:link	{
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #FFFFFF;
+a:link {
+    color: #FFFFFF;
+    font-family: impact;
+    line-height: 1.5;
+    padding-right: 20px;
+    text-decoration: none;
+    text-transform: lowercase;
 }
 
 .navlink a:visited	{
@@ -76,32 +82,38 @@ a:hover {
 }
 
 a:visited {
-	color: #FFFFFF;
+	color: #E44D32;
 }
 
 p {
-	width: 900px;
-	color: #7F7F81;
-	text-align: justify;
-	margin-top: 30px;
-	margin-bottom: 60px;
-	word-spacing: 5px;
-	line-height: 30px;
+    color: #7F7F81;
+    line-height: 30px;
+    margin: 23px -10px 60px 61px;
+    text-align: right;
+    width: 556px;
+    word-spacing: 10px;
+    padding-bottom: 10px;
+    font-family: georgia;
 }
 
+
 table {
-	padding: 6px;
-	margin-left: 5px;
-	margin-right: 5px;
-	margin-bottom: 20px;
-	border-top: 1px solid #CCC2A9;
-	border-bottom: 1px solid #CCC2A9;
-	width: 890px;
+    border-bottom: 1px solid #CCC2A9;
+    border-top: 1px solid #CCC2A9;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 6px;
+    width: 621px;
 }
 
 img {
 	width: 900px;
 	height: 550px;
+}
+
+article p {
+	width: 300px;
 }
 
 h1 {
@@ -110,7 +122,7 @@ h1 {
     text-align: right;
 }
 
-h2 {
+h2, h3 {
     color: #E44D32;
     margin-right: 25px;
     text-align: right;
@@ -143,5 +155,5 @@ h2 {
 }
 
 .red {
-	color: #AD1443;
+	color: #E44D32;
 }
