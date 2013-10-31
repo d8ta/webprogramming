@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    
+<html lang=de>
+<head>
+<meta charset=utf-8>
+<title>Pizza Bestellung - 2012</title>
+<link rel="stylesheet" href="c/style.css" />
+</head>
+
+<body>
+<div id="wrap">
+    <h1>Pizza Bestellung</h1>
+
+	
+    <form name="pizzaform" method="get" action="order.php">
+        
+        <fieldset class="order">
+            <legend>Deine Bestellung</legend>
+            <p><label>
+            <input type="text" value="0" size="3" name="pizza_magerita" id="pizza_magerita">
+            Magerita</label></p>
+            <p><label>
+            <input type="text" value="0" size="3" name="pizza_diavolo" id="pizza_diavolo">
+            Diavolo</label></p> 
+            <p><label>
+            <input type="text" value="0" size="3" name="pizza_palermo" id="pizza_palermo">
+            Palermo</label></p>
+            <p class="comment">Mindestbestellmenge: 3 Pizzas</p>
+        </fieldset>
+     
+        <fieldset class="address">
+            <legend>Deine Lieferadresse</legend>
+            <p><label for="first-name">Name *</label>
+            <input type="text" value="" name="first_name" id ="first-name" required pattern="[a-zA-Z]+"></p>
+            <p><label for="last_name">Adresse *</label>
+            <input type="text" value="" name="last_name" id="last_name" required pattern="[a-zA-Z]+"></p>
+            <p><label for="phone">Telefon *</label>
+            <input type="text" value="" name="phone" id="phone" required pattern="[0-9]+"></p>
+        </fieldset>    
+        
+        <input type="submit">
+    </form>
+ 
+    <p><a href="4b/index.html">Hier</a> gehts zu Aufgabe b</p>
+        
+</div>
+</body>
+</html>
