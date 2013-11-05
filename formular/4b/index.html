@@ -5,6 +5,46 @@
 <meta charset=utf-8>
 <title>Pizza Bestellung - 2012</title>
 <link rel="stylesheet" href="../c/style.css" />
+
+<script>
+
+function checkOrder ()  {
+	
+document.getElementById("totalPizza").innerHTML =
+
+	parseInt(document.getElementById("pizza_margeria").value)
+	+parseInt(document.getElementById("pizza_diavolo").value)
+	+parseInt(document.getElementById("pizza_palermo").value);
+	
+	document.getElementById("totalPrice").innerHTML =
+	
+	parseInt(document.getElementById("pizza_margeria").value) * 5
+	+parseInt(document.getElementById("pizza_diavolo").value) * 7
+	+parseInt(document.getElementById("pizza_palermo").value) * 7;
+		
+}
+
+function formCheck () {
+	
+		var i = parseInt(document.getElementById('pizza_margerita').value)
+		+parseInt(document.getElementById('pizza_diavolo').value)
+		+parseInt(document.getElementById('pizza_palermo').value);
+	
+		if ( i <= 2 ) {
+			
+			alert("Mindestorder 3 Pizza");
+			return false;
+			
+		} else {
+			
+			return true;
+			
+		}
+}
+
+
+</script>
+
 </head>
 
 <body>
@@ -12,20 +52,26 @@
     <h1>Pizza Bestellung</h1>
 
 	
-    <form name="pizzaform" method="get" action="order.php">
+    <form name="pizzaform" method="get" action="order.php" onsubmit="wert=formCheck(); return wert;">
         
         <fieldset class="order">
             <legend>Deine Bestellung</legend>
             <p><label>
-            <input type="text" value="0" size="3" name="pizza_magerita" id="pizza_magerita">
+            <input type="text" value="0" size="3" name="pizza_magerita" id="pizza_magerita" onchange="checkOrder()">
             Magerita</label></p>
             <p><label>
-            <input type="text" value="0" size="3" name="pizza_diavolo" id="pizza_diavolo">
+            <input type="text" value="0" size="3" name="pizza_diavolo" id="pizza_diavolo" onchange="checkOrder()">
             Diavolo</label></p> 
             <p><label>
-            <input type="text" value="0" size="3" name="pizza_palermo" id="pizza_palermo">
+            <input type="text" value="0" size="3" name="pizza_palermo" id="pizza_palermo" onchange="checkOrder()">
             Palermo</label></p>
             <p class="comment">Mindestbestellmenge: 3 Pizzas</p>
+            
+            <!-- Preis und Menge -->
+   			<p class="sum"> Pizza insgesamt = <span id="totalPizza"></span></p>
+   			<p class="sum"> Preis insgesamt = <span id="totalPrice"></span></p>
+
+            
         </fieldset>
      
         <fieldset class="address">
@@ -38,10 +84,8 @@
             <input type="text" value="" name="phone" id="phone" required pattern="[0-9]+"></p>
         </fieldset>    
         
-		<input type="email" name="email" placeholder="name@provider.de/com/net" required />
 		<input type="submit">
-                
-
+		
     </form>
         
 </div>
