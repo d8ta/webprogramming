@@ -1,4 +1,7 @@
 // TODO: Zeilen eintragen und prüfen
+/*  Welche Events werden verwendet? (Welche Aktion löst das Event aus? Wo werden die Events festgelegt, wo abgearbeitet?)
+Wie gelangt ein neue eingetippter Text in die Todo-Liste?
+Wie werden die "Delete"-Buttons dargestellt?  */
 
 
 'use strict';
