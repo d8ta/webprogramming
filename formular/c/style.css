@@ -9,11 +9,27 @@ body {
     font:13px/1.5 Verdana, Helvetica, sans-serif;
     color:rgb(81, 81, 81);
     margin:20px;
+    background-color: #C2F2CF;
+    color: #E44D32;
+    
+.sum {
+	color: #CF1314;
+	font-size: 120%;
+} 
+
+.wrap {
+	float: center;
+}
+
+.pizzaimg {
+	float: right;
+}
+ 
 }
 
 h1 {
-    font-size:200%;
-    margin:0.5em 0;
+    font-size: 200%;
+    margin: 0.5em 0 0.5em;
 }
 
 h2 {
@@ -23,7 +39,7 @@ h2 {
 
 
 fieldset {
-    margin:2em 0;
+    margin: 2em 0 2em;
 }
 
 .order p {

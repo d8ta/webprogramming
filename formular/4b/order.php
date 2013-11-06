@@ -38,7 +38,7 @@
     echo("<p>$phone</p>");   
     echo("<p class=\"gap\"><strong>Danke für deine Bestellung!</strong></p>");   
 	
-	$to = "mr.raudusch@gmail.com";
+	$to = "mr.raudusch@";
 	$subject = "Pizza Order";
 	$message = "Siehe Bestellung";
 	
