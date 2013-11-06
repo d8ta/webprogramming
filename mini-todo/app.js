@@ -54,7 +54,7 @@ function newTodoKeyPressHandler(event) {
 
 function spanDeleteClickHandler(event) {
     removeTodoById(event.target.getAttribute('data-todo-id'));
-    refreshData();
+   refreshDisplay();
 }
 
 
@@ -68,7 +68,7 @@ function todoContentHandler(event) {
         div = document.getElementById('li_' + todoId), // object
         inputEditTodo = document.getElementById('input_' + todoId); // object
 
-    div.class       Name = 'editing';
+    div.className = 'editing';
     inputEditTodo.focus();
 }
 
