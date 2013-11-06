@@ -1,8 +1,10 @@
-'use strict';
+// TODO: Zeilen eintragen und prüfen
 
-var todos = [],
-    stat = {},
-    ENTER_KEY = 13;
+
+'use strict';
+var todos = [], // array
+    stat = {}, // object
+    ENTER_KEY = 13; // number
 
 window.addEventListener('load', windowLoadHandler, false);
 
@@ -22,9 +24,9 @@ function addEventListeners() {
 }
 
 function inputEditTodoKeyPressHandler(event) {
-    var inputEditTodo = event.target,
-        trimmedText = inputEditTodo.value.trim(),
-        todoId = event.target.id.slice(6);
+    var inputEditTodo = event.target, // object
+        trimmedText = inputEditTodo.value.trim(), // object
+        todoId = event.target.id.slice(6); // object
 
     if (trimmedText) {
         if (event.keyCode === ENTER_KEY) {
@@ -37,8 +39,8 @@ function inputEditTodoKeyPressHandler(event) {
 }
 
 function inputEditTodoBlurHandler(event) {
-    var inputEditTodo = event.target,
-        todoId = event.target.id.slice(6);
+    var inputEditTodo = event.target, // object
+        todoId = event.target.id.slice(6);  // object
 
     editTodo(todoId, inputEditTodo.value);
 }
@@ -62,17 +64,17 @@ function hrefClearClickHandler() {
 }
 
 function todoContentHandler(event) {
-    var todoId = event.target.getAttribute('data-todo-id'),
-        div = document.getElementById('li_' + todoId),
-        inputEditTodo = document.getElementById('input_' + todoId);
+    var todoId = event.target.getAttribute('data-todo-id'), // object
+        div = document.getElementById('li_' + todoId), // object
+        inputEditTodo = document.getElementById('input_' + todoId); // object
 
-    div.className = 'editing';
+    div.class       Name = 'editing';
     inputEditTodo.focus();
 }
 
 function checkboxChangeHandler(event) {
-    var checkbox = event.target,
-        todo = getTodoById(checkbox.getAttribute('data-todo-id'));
+    var checkbox = event.target, // object
+        todo = getTodoById(checkbox.getAttribute('data-todo-id')); // object
 
     todo.completed = checkbox.checked;
     refreshDisplay();
@@ -80,7 +82,7 @@ function checkboxChangeHandler(event) {
 
 
 function addTodo(text) {
-    var trimmedText = text.trim();
+    var trimmedText = text.trim(); // object
 
     if (trimmedText) {
         var todo = new Todo(trimmedText, false);
@@ -90,7 +92,7 @@ function addTodo(text) {
 }
 
 function editTodo(todoId, text) {
-    var i, l;
+    var i, l; // number
 
     for (i = 0, l = todos.length; i < l; i++) {
         if (todos[i].id === todoId) {
@@ -103,7 +105,7 @@ function editTodo(todoId, text) {
 
 
 function removeTodoById(id) {
-    var i = todos.length;
+    var i = todos.length; // number
 
     while (i--) {
         if (todos[i].id === id) {
@@ -113,7 +115,7 @@ function removeTodoById(id) {
 }
 
 function getTodoById(id) {
-    var i, l;
+    var i, l; // number
 
     for (i = 0, l = todos.length; i < l; i++) {
         if (todos[i].id === id) {
@@ -125,9 +127,16 @@ function getTodoById(id) {
 
 
 function refreshDisplay() {
-
-    var todo, checkbox, label, deleteLink, divDisplay, inputEditTodo, li, i, l,
-        ul = document.getElementById('todo-list');
+    var todo, // object
+    	checkbox, // object
+    	label, // object 
+    	deleteLink, // object 
+    	divDisplay, // object 
+    	inputEditTodo, // object 
+    	li,  // number
+    	i,  // number
+    	l, // number
+        ul = document.getElementById('todo-list'); // string
 
     ul.innerHTML = '';
     document.getElementById('new-todo').value = '';
@@ -189,7 +198,7 @@ function refreshDisplay() {
 }
 
 function getUuid() {
-    var i, random,
+    var i, random, // number
         uuid = '';
 
     for (i = 0; i < 32; i++) {
