@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+      function setcolor(color) {
+        var button = document.getElementById('farbfeld');
+        button.style.backgroundColor = color;
+      }
+ 
+      function addNewColor (event) {
+        event.preventDefault();
+        var farbCode = document.getElementById('farbcode').value;
+        var button = document.createElement('input');
+        button.setAttribute('type', 'button');
+        button.setAttribute('value', farbCode);
+        button.onclick = function() { setcolor(farbCode); }
+        var buttons = document.getElementById('buttons');
+        buttons.appendChild(button);
+
+
+      }
+    </script>
+  </head>
+  <body id="farbfeld">
+    <h1>Farbwahl</h1>
+    <form onsubmit="addNewColor(event)">
+          <div id="buttons">
+            <input type="button" value="Rot"  onclick="setcolor('red')" />
+            <input type="button" value="Grün" onclick="setcolor('#0F0')" />
+            <input type="button" value="Blau" onclick="setcolor('blue')" />
+          </div>
+
+
+      <!-- Eingabefeld für Farbcode und Button creation mit der Farbe -->
+          <fieldset class="newColor">
+            <legend>Hier können sie eine neue Farbe hinzufügen</legend>
+            <input type="text" id="farbcode" value="" size="30" placeholder="Hier den Farbcode eingeben" />
+            <input type="button" value="Neue Farbe anlegen" onclick="addNewColor(event)" />
+          </fieldset>
+    </form>
+
+  </body>
+</html>

@@ -1,4 +1,4 @@
-html,
+
 body {
 	margin: 0;
 	padding: 0;
@@ -384,4 +384,10 @@ label[for='toggle-all'] {
 
 .hidden{
 	display:none;
+}
+
+time {
+	font-size: 50%;
+	margin-left: 60%;
+	color: #817F82;
 }
