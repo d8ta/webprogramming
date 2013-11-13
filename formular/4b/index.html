@@ -46,6 +46,14 @@ function formCheck() {
 
 <body>
 <div id="wrap">
+
+<h3>a little testprogramm with javascript</h3>
+
+    <input value="0" name="in" onchange="document.getElementById('out').innerHTML = this.value * 100">>
+    <span id="out"></span>
+
+
+
     <h1>Pizza Bestellung</h1>
 
     <form name="pizzaform" method="get" action="order.php" onsubmit="wert=formCheck(); return wert;">
@@ -75,7 +83,7 @@ function formCheck() {
             <input type="number" value="" name="phone" id="phone" required pattern="[0-9]+"></p>
         </fieldset>
 
-        <input type="submit">
+        <input type="submit" value="Bestellung abschicken">
     </form>
     
     <img class="pizzaimg" src="../Pizza.jpg" alt="pizza" width="20%" heigth="20%">

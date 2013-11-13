@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+	
+	<canvas id="myCanvas"></canvas>
+	<h3>Daniel Raudschus</h3>
+
+<script>
+    var my_canvas = document.getElementById("myCanvas");
+    var my_context = my_canvas.getContext("2d");
+    
+  // rechteck zeichnen  my_context.fillRect(100, 100, 200, 200);
+   
+
+	// inner R
+    my_context.moveTo(50, 40);
+    my_context.lineTo(50, 110);
+    my_context.lineTo(80, 110);
+    my_context.lineTo(95, 65);
+    my_context.lineTo(80, 40);
+    my_context.lineTo(50, 40);
+
+	// outer R
+	my_context.moveTo(30, 20);
+    my_context.lineTo(30, 130);
+    my_context.lineTo(95, 130);
+    my_context.lineTo(115, 65);
+    my_context.lineTo(90, 20);
+    my_context.lineTo(30, 20);
+    
+    // foot of R
+    my_context.moveTo(30, 110)
+    my_context.lineTo(30, 310);
+    
+
+  //  context.arcTo(x1, y1, x2, y2, radius)
+    
+    my_context.strokeStyle = "tan";
+    my_context.stroke();
+    
+</script> 
+
+</body>
+</html>

@@ -28,7 +28,7 @@
     $last_name      = $_GET['last_name'];
     $phone          = $_GET['phone'];
     
-    echo("<h2>Deine Bestellung</h2>");
+    echo("<h1>Deine Bestellung</h1>");
     echo("<p>Folgende Bestellung ist bei uns eingelangt:</p>");
     echo("<p>$pizza_magerita Pizza Magerita</p>");
     echo("<p>$pizza_diavolo Pizza Diavolo</p>");
