@@ -9,7 +9,7 @@
     var my_canvas = document.getElementById("myCanvas");
     var my_context = my_canvas.getContext("2d");
     
-  // rechteck zeichnen  my_context.fillRect(100, 100, 200, 200);
+   // rechteck zeichnen  my_context.fillRect(20, 20, 60, 10);
    
 
 	// inner R
@@ -20,22 +20,25 @@
     my_context.lineTo(80, 40);
     my_context.lineTo(50, 40);
 
-	// outer R
+// foot of R
+    my_context.moveTo(50, 110);
+    my_context.lineTo(50, 200);
+	my_context.moveTo(50, 110);
+	my_context.lineTo(110, 200);
+    
+
+	/* outer R
 	my_context.moveTo(30, 20);
     my_context.lineTo(30, 130);
     my_context.lineTo(95, 130);
     my_context.lineTo(115, 65);
     my_context.lineTo(90, 20);
     my_context.lineTo(30, 20);
-    
-    // foot of R
-    my_context.moveTo(30, 110)
-    my_context.lineTo(30, 310);
-    
+    */
 
   //  context.arcTo(x1, y1, x2, y2, radius)
     
-    my_context.strokeStyle = "tan";
+    my_context.strokeStyle = "#E44D32";
     my_context.stroke();
     
 </script> 
