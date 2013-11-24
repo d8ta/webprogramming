@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html>
-<body>
-	
-	<canvas id="myCanvas"></canvas>
-	<h3>Daniel Raudschus</h3>
+	<body>
 
-<script>
-    var my_canvas = document.getElementById("myCanvas");
-    var my_context = my_canvas.getContext("2d");
-    
-   // rechteck zeichnen  my_context.fillRect(20, 20, 60, 10);
-   
+		<canvas id="myCanvas"></canvas>
+		<h3>Daniel Raudschus</h3>
 
-	// inner R
-    my_context.moveTo(50, 40);
-    my_context.lineTo(50, 110);
-    my_context.lineTo(80, 110);
-    my_context.lineTo(95, 65);
-    my_context.lineTo(80, 40);
-    my_context.lineTo(50, 40);
+		<script>
+			var my_canvas = document.getElementById("myCanvas");
+			var my_context = my_canvas.getContext("2d");
 
-// foot of R
-    my_context.moveTo(50, 110);
-    my_context.lineTo(50, 200);
-	my_context.moveTo(50, 110);
-	my_context.lineTo(110, 200);
-    
+			// rechteck zeichnen  my_context.fillRect(20, 20, 60, 10);
 
-	/* outer R
-	my_context.moveTo(30, 20);
-    my_context.lineTo(30, 130);
-    my_context.lineTo(95, 130);
-    my_context.lineTo(115, 65);
-    my_context.lineTo(90, 20);
-    my_context.lineTo(30, 20);
-    */
+			// inner R
+			my_context.moveTo(50, 40);
+			my_context.lineTo(50, 110);
+			my_context.lineTo(80, 110);
+			my_context.lineTo(95, 65);
+			my_context.lineTo(80, 40);
+			my_context.lineTo(50, 40);
 
-  //  context.arcTo(x1, y1, x2, y2, radius)
-    
-    my_context.strokeStyle = "#E44D32";
-    my_context.stroke();
-    
-</script> 
+			// foot of R
+			my_context.moveTo(50, 110);
+			my_context.lineTo(50, 200);
+			my_context.moveTo(50, 110);
+			my_context.lineTo(110, 200);
 
-</body>
+			/* outer R
+			my_context.moveTo(30, 20);
+			my_context.lineTo(30, 130);
+			my_context.lineTo(95, 130);
+			my_context.lineTo(115, 65);
+			my_context.lineTo(90, 20);
+			my_context.lineTo(30, 20);
+			*/
+
+			//  context.arcTo(x1, y1, x2, y2, radius)
+
+			my_context.strokeStyle = "#E44D32";
+			my_context.stroke();
+
+		</script>
+
+	</body>
 </html>
